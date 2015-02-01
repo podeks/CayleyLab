@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<module codename="org.netbeans.core.windows/2">
+    <module_version install_time="1360797724974" last="false" origin="installer" specification_version="2.58.1">
+        <file crc="1059846727" name="config/Modules/org-netbeans-core-windows.xml"/>
+        <file crc="3269110108" name="modules/locale/org-netbeans-core-windows_ja.jar"/>
+        <file crc="418667592" name="modules/locale/org-netbeans-core-windows_pt_BR.jar"/>
+        <file crc="2462085607" name="modules/locale/org-netbeans-core-windows_ru.jar"/>
+        <file crc="1693259755" name="modules/locale/org-netbeans-core-windows_zh_CN.jar"/>
+        <file crc="634468486" name="modules/org-netbeans-core-windows.jar"/>
+    </module_version>
+    <module_version install_time="1392147805753" last="true" origin="NetBeans Distribution" specification_version="2.58.5">
+        <file crc="1059846727" name="config/Modules/org-netbeans-core-windows.xml"/>
+        <file crc="2093799465" name="modules/locale/org-netbeans-core-windows_ja.jar"/>
+        <file crc="3780336951" name="modules/locale/org-netbeans-core-windows_pt_BR.jar"/>
+        <file crc="175179507" name="modules/locale/org-netbeans-core-windows_ru.jar"/>
+        <file crc="3281220533" name="modules/locale/org-netbeans-core-windows_zh_CN.jar"/>
+        <file crc="3760034447" name="modules/org-netbeans-core-windows.jar"/>
+    </module_version>
+</module>

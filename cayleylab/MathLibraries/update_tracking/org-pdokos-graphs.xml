@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="org.pdokos.graphs">
+    <module_version install_time="1422225020470" last="true" origin="installer" specification_version="1.0">
+        <file crc="790897478" name="config/Modules/org-pdokos-graphs.xml"/>
+        <file crc="1522450170" name="modules/org-pdokos-graphs.jar"/>
+    </module_version>
+</module>
