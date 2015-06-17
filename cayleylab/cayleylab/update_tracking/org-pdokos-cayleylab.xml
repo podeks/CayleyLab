@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><module codename="org.pdokos.cayleylab">
-    <module_version install_time="1422753218946" last="true" origin="installer" specification_version="1.0">
+    <module_version install_time="1434584149057" last="true" origin="installer" specification_version="1.0">
         <file crc="2750343003" name="config/Modules/org-pdokos-cayleylab.xml"/>
-        <file crc="3916532802" name="modules/org-pdokos-cayleylab.jar"/>
+        <file crc="3906134009" name="modules/ext/mtj-1.0-snapshot.jar"/>
+        <file crc="4178168357" name="modules/org-pdokos-cayleylab.jar"/>
     </module_version>
 </module>

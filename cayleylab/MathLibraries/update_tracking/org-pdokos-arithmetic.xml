@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><module codename="org.pdokos.arithmetic">
-    <module_version install_time="1422225019434" last="true" origin="installer" specification_version="1.0">
+    <module_version install_time="1434093658534" last="true" origin="installer" specification_version="1.0">
         <file crc="3221329421" name="config/Modules/org-pdokos-arithmetic.xml"/>
-        <file crc="1464171644" name="modules/org-pdokos-arithmetic.jar"/>
+        <file crc="2055320445" name="modules/org-pdokos-arithmetic.jar"/>
     </module_version>
 </module>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><module codename="org.pdokos.cayleygraphs">
-    <module_version install_time="1422225023604" last="true" origin="installer" specification_version="1.0">
+    <module_version install_time="1434093665293" last="true" origin="installer" specification_version="1.0">
         <file crc="1748686636" name="config/Modules/org-pdokos-cayleygraphs.xml"/>
-        <file crc="3521815109" name="modules/org-pdokos-cayleygraphs.jar"/>
+        <file crc="86587373" name="modules/org-pdokos-cayleygraphs.jar"/>
     </module_version>
 </module>
