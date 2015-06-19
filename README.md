@@ -1,7 +1,7 @@
 # CayleyLab
 A Linux/Windows application, founded upon the podeks/MathLibraries module suite, for creating, analyzing, and storing Cayley graph structures on various finite groups.
 
-Assuming 4 gigabytes of RAM, this application is capable of building Cayley graphs of size up to 5 million vertices and 10 million edges (one can push a little higher than this).  The construction of a Cayley graph proceeds at a rate of about 50,000-100,000 edges per second.
+Assuming 4 gigabytes of RAM, this application is capable of producing Cayley graphs of size up to 5 million vertices and 10 million edges (one can push a little higher than this).  The construction of a Cayley graph proceeds at a rate of about 50,000-100,000 edges per second.
 
 Click on 'Download ZIP' to download this application. After unzipping the repository folder CayleyLab-master, open it and move the folder 'cayleylab' anywhere you like. The zip file and repository folder can then be discarded. To run the application, double click on cayleylab.exe (32 bit) or cayleylab64.exe (64 bit) inside the 'bin' folder.
 
