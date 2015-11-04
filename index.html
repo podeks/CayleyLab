@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Cayleylab by podeks</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Cayleylab</h1>
+        <p>A Linux/Windows application, founded upon the MathLibraries module suite, for creating and storing Cayley graph structures on various finite groups.</p>
+        <p class="view"><a href="https://github.com/podeks/CayleyLab">View the Project on GitHub <small>podeks/CayleyLab</small></a></p>
+        <ul>
+          <li><a href="https://github.com/podeks/CayleyLab/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/podeks/CayleyLab/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/podeks/CayleyLab">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="cayleylab" class="anchor" href="#cayleylab" aria-hidden="true"><span class="octicon octicon-link"></span></a>CayleyLab</h1>
+
+<p>A Linux/Windows application, founded upon the podeks/MathLibraries module suite, for creating, analyzing, and storing Cayley graph structures on various finite groups.</p>
+
+<p>Assuming 4 gigabytes of RAM, this application is capable of producing Cayley graphs of size up to 5 million vertices and 10 million edges (one can push a little higher than this).  The construction of a Cayley graph proceeds at a rate of about 50,000-100,000 edges per second.</p>
+
+<p>Click on 'Download ZIP' to download this application. After unzipping the repository folder CayleyLab-master, open it and move the folder 'cayleylab' anywhere you like. The zip file and repository folder can then be discarded. To run the application, double click on cayleylab.exe (32 bit) or cayleylab64.exe (64 bit) inside the 'bin' folder.</p>
+
+<h4>
+<a id="screenshot" class="anchor" href="#screenshot" aria-hidden="true"><span class="octicon octicon-link"></span></a>Screenshot:</h4>
+
+<p><img src="/screenshots/img01.jpg" alt="image 01"></p>
+
+<h4>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features:</h4>
+
+<p>-A utility for creating a set of randomly selected elements from any of the finite groups provided by this application (which includes all finite simple non-abelian groups of order less than six million; see the list below), from which the Cayley graph can be created.</p>
+
+<p>-A display of basic structural data pertaining to the graph, including the diameter, girth, expected path-distance of a random vertex from the root (which is equal to the expected path distance between two random vertices of the graph by symmetry), and tables displaying the sizes of the sets S(n) of vertices of path-distance n from the root vertex (identity element), and the sizes of the edge sets E(n) between them and T(n) within them.</p>
+
+<p>-The option of computing the second largest eigenvalue in magnitude of the graph.  This functionality is provided by the Matrix Toolbox Java (<a href="https://github.com/fommil/matrix-toolkits-java.git">MTJ</a>) library, in particular the ArpackSym interface to ARPACK sparse matrix library.  Note, that although this is the same library used by the eigs() command in MATLAB and Octave to compute the eigenvalues of a large sparse matrix, the ArpackSym interface will sometimes fail in cases where the eigs command wouldn’t (because of trickiness in avoiding numerical instabilities that can arise in the underlying Arnoldi/Lanczos algorithm).  Also note, that this is a very expensive computation, especially for graphs with over 100,000 vertices, that typically takes several times longer to compute than the time it takes to construct the graph.</p>
+
+<p>-Upon creating a Cayley graph, one has the option to:
+  (i) save the generating set to a file, which can later be loaded by the application.
+ (ii) save the eigenvalue (if it was computed), together with the vertex and edge shell data (from which the other quantities are easily retrieved) to a file.
+(iii) save the graph as a sparse color-matrix file.  This file is in a format that can be read by software packages such as MATLAB or Octave that handle sparse matrices.</p>
+
+<p>-A color graph file created by this application can subsequently be loaded within the application for use as an alternate geometric/combinatorial implementation of the the group operation (*), by which further Cayley graphs can be created.
+If you save a generating set in this context, then the file will contain as its header the name of the file containing the graph.  If you then load this generating set from file, then the graph will also automatically be loaded (so long as it is in the same directory).</p>
+
+<p>-Also included is a catalog of predefined generating sets, which at present contains only the well known Lubotzky-Phillips-Sarnak Ramanujan Cayley graphs.</p>
+
+<p>(*) Cayley graphs can be characterized as being vertex-transitive color-graphs (in the sense of having an involutive edge-coloring) .  Given such a graph, the group operation can be recovered by picking any vertex as the identity, and defining the product ab of two vertices a and b as the endpoint of the path defined by walking along the graph, starting at vertex a, according to the same color sequence of any path from the root vertex to b.</p>
+
+<h4>
+<a id="available-groups" class="anchor" href="#available-groups" aria-hidden="true"><span class="octicon octicon-link"></span></a>Available Groups:</h4>
+
+<h5>
+<a id="matrix-groups-and-projective-groups-over-a-finite-field" class="anchor" href="#matrix-groups-and-projective-groups-over-a-finite-field" aria-hidden="true"><span class="octicon octicon-link"></span></a>Matrix groups and projective groups over a finite field:<br>
+</h5>
+
+<p>GL_n, SL_n, PGL_n, PSL_n (General and Special linear groups and their projective groups) for n&gt;=2.<br>
+GSp_n, Sp_n, PGSp_n, PSp_n (Symplectic Similitude and Symplectic groups and their projective groups) for n&gt;=4 even.<br>
+U_n, SU_n, PU_n, PSU_n (Unitary and Special Unitary groups and their projective groups) for n&gt;=3.<br>
+The Suzuki group Sz(8)<br> 
+The Dickson group G2(3)<br>
+<br></p>
+
+<h5>
+<a id="symmetric-and-alternating-groups" class="anchor" href="#symmetric-and-alternating-groups" aria-hidden="true"><span class="octicon octicon-link"></span></a>Symmetric and Alternating groups:<br>
+</h5>
+
+<p>S_n and A_n<br>
+<br></p>
+
+<h5>
+<a id="the-five-sporadic-simple-groups-of-order-less-than-five-million-all-less-than-one-million" class="anchor" href="#the-five-sporadic-simple-groups-of-order-less-than-five-million-all-less-than-one-million" aria-hidden="true"><span class="octicon octicon-link"></span></a>The five sporadic simple groups of order less than five million (all less than one million):<br>
+</h5>
+
+<p>M11 (order 7,920)<br>
+M12 (order 95,040)<br>
+M22 (order 443,520)<br>
+J1 (order 175,560)<br>
+J2 (order 604,800) <br></p>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/podeks">podeks</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
