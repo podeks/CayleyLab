@@ -29,18 +29,18 @@ If you save a generating set in this context, then the file will contain as its 
 
 ####Available Groups:
 #####Matrix groups and projective groups over a finite field:<br>
-GL_n, SL_n, PGL_n, PSL_n (General and Special linear groups and their projective groups) for n>=2.<br>
-GSp_n, Sp_n, PGSp_n, PSp_n (Symplectic Similitude and Symplectic groups and their projective groups) for n>=4 even.<br>
-U_n, SU_n, PU_n, PSU_n (Unitary and Special Unitary groups and their projective groups) for n>=3.<br>
+GL<sub>n</sub>, SL<sub>n</sub>, PGL<sub>n</sub>, PSL<sub>n</sub> (General and Special linear groups and their projective groups) for n>=2.<br>
+GSp<sub>n</sub>, Sp<sub>n</sub>, PGSp<sub>n</sub>, PSp<sub>n</sub> (Symplectic Similitude and Symplectic groups and their projective groups) for n>=4 even.<br>
+U<sub>n</sub>, SU<sub>n</sub>, PU<sub>n</sub>, PSU<sub>n</sub> (Unitary and Special Unitary groups and their projective groups) for n>=3.<br>
 The Suzuki group Sz(8)<br> 
-The Dickson group G2(3)<br>
+The Dickson group G<sub>2</sub>(3)<br>
 <br>
 #####Symmetric and Alternating groups:<br>
-S_n and A_n<br>
+S<sub>n</sub> and A<sub>n</sub><br>
 <br>
 #####The five sporadic simple groups of order less than five million (all less than one million):<br>
-M11 (order 7,920)<br>
-M12 (order 95,040)<br>
-M22 (order 443,520)<br>
-J1 (order 175,560)<br>
-J2 (order 604,800) <br>
+M<sub>11</sub> (order 7,920)<br>
+M<sub>12</sub> (order 95,040)<br>
+M<sub>22</sub> (order 443,520)<br>
+J<sub>1</sub> (order 175,560)<br>
+J<sub>2</sub> (order 604,800) <br>
